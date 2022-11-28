@@ -1,5 +1,5 @@
 # Website
 
-# Built by: (HTML, CSS, JS).
+# Built by: (HTML, Sass, CSS, JS).
 
 # Libraries: Font Awesome.
