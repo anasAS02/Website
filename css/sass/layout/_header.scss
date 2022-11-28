@@ -1,0 +1,101 @@
+/* Start Header */
+.header{
+    background-color: $w-color;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 70px;
+        padding-left: 70px;
+        padding-top: 20px;
+        position: relative;
+        @include max-md{
+            flex-direction: column;
+        }
+        .logo{
+            @include max-mob{
+                    padding-left: 37%;
+                    margin-bottom: 0px;
+                    font-size: 20px;
+                
+            }
+            h2{
+                color: $main-color;
+            }
+        }
+        .links ul{
+            display: flex;
+            li{
+                padding: 20px;
+                margin-left: 15px;
+                transition: $main-transition;
+                &:hover{
+                    background-color: #fafafa;
+                }
+                &:last-child:hover .list{
+                    display: flex;
+                }
+                a{
+                    position: relative;
+                    transition: $main-transition;
+                    color: $b-color;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        transition: $main-transition;
+                        width: 0;
+                        height: 4px;
+                        background-color: #2196f3;
+                        top: -24px;
+                        left: -19px;
+                    }
+                    &:hover{
+                        color: $main-color;
+                        &::before{
+                            width: 125%;
+                        }
+                    }
+                }
+            }
+        }
+        .list{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: calc(100% + 5px);
+            padding-top: 50px;
+            border-bottom: 3px solid $main-color;
+            background-color: white;
+            z-index: 1;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            img{
+                @include max-md{
+                    display: none;
+                }
+            }
+            .menu{
+                @include max-md{
+                    flex-direction: column;
+                    padding-left: 0;
+                }
+                padding-left: 150px;
+                display: flex;
+                ul li a,
+                ul li svg{
+                    color: $main-color;
+                }
+                ul li:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+                .list-one{
+                    flex-direction: column;
+                }
+                .list-two{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    }
+/* End Header */

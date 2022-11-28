@@ -1,0 +1,71 @@
+/* Start Components */
+.w-container{
+    padding-top: $padding;
+    padding-bottom: $padding;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+}
+.main-title{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-transform: uppercase;
+    left: 50%;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px 20px;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: $main-color;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -25px;
+        transition: .7s;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: $main-color;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -25px;
+        transition: .7s;
+    }
+    &:hover{
+        color: $w-color;
+        &::after{
+            right: 0;
+            width: 50%;
+            height: 100%;
+            border-radius: 0;
+            z-index: -1;
+        }
+        &::before{
+            left: 0;
+            height: 100%;
+            width: 50%;
+            border-radius: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.dots-one{
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+.dots-two{
+    position: absolute;
+    bottom: 0;
+}
+/* End Components */

@@ -1,0 +1,29 @@
+/* Start Global Rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* End Global Rules */
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixin';
+@import 'sass/components/components';
+
+@import 'sass/layout/header';
+@import 'sass/pages/homepage';
+@import 'sass/pages/about';
+@import 'sass/layout/footer';

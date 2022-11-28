@@ -1,0 +1,19 @@
+/* Start Landing*/
+.landing {
+  position: relative; }
+  .landing .container .image img {
+    position: absolute;
+    width: 40%;
+    right: 90px;
+    margin: 50px auto;
+    padding-top: 80px; }
+  .landing .container .text {
+    position: absolute;
+    padding-top: 220px;
+    padding-left: 40px; }
+    .landing .container .text h1 {
+      font-size: 50px; }
+    .landing .container .text p {
+      font-size: 18px; }
+
+/* End Landing*/

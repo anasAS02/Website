@@ -1,0 +1,150 @@
+/* Start Footer */
+.footer {
+    background-color: #191919;
+    color: $w-color;
+    position: relative;
+
+    .w-container {
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 40px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #777;
+            bottom: 65px;
+        }
+
+        @include max-md {
+            height: calc(60vh + 700px);
+        }
+
+        @include min-md {
+            height: calc(100vh - 100px);
+        }
+
+        @include min-lg {
+            height: calc(78vh - 60px);
+        }
+
+        .f-box {
+            .social {
+                display: flex;
+
+                div {
+                    transition: $main-transition;
+                    padding: 13px;
+                    display: block;
+                    background-color: #f1f1;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    svg {
+                        font-size: 20px;
+                        color: $second-color;
+                    }
+                }
+
+                .facebook:hover {
+                    background-color: #1877f2;
+                }
+
+                .twitter:hover {
+                    background-color: #1da1f2;
+                }
+
+                .youtube:hover {
+                    background-color: #ff0000;
+                }
+            }
+
+            .p-social {
+                font-size: 20px;
+                color: #b9b9b9;
+                padding-top: 10px;
+            }
+
+            .text {
+                p {
+                    font-size: 22px;
+                    color: $second-color;
+                    position: relative;
+                    color: #b9b9b9;
+                    padding-left: 20px;
+                    transition: $main-transition;
+                    cursor: pointer;
+
+                    &::before {
+                        position: absolute;
+                        content: "\F101";
+                        font-weight: 900;
+                        font-family: "Font Awesome 5 Free";
+                        left: 0;
+                        top: 50%;
+                        color: $main-color;
+                        transform: translate(-50%, -50%);
+                        transition: $main-transition;
+                    }
+
+                    &:hover {
+                        color: $w-color;
+                        padding-left: 30px;
+                    }
+
+                    &:hover::before {
+                        left: 10px;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .information {
+            svg {
+                padding-right: 5px;
+                color: $main-color;
+                font-size: 22px;
+            }
+
+            p {
+                padding-bottom: 10px;
+                padding-left: 35px;
+                margin-top: -30px;
+                color: #b9b9b9;
+                font-size: 18px;
+            }
+        }
+
+        .i-gallery {
+            img {
+                width: 74px;
+            }
+        }
+
+        .copy-right {
+            padding: 10px;
+            margin: 0px auto;
+            position: absolute;
+            left: 50%;
+            top: 92%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+
+            @include max-md {
+                top: 97%;
+            }
+
+            @include min-md {
+                top: 96%;
+            }
+        }
+    }
+}
+/* End Footer */
