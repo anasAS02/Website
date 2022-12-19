@@ -113,6 +113,7 @@ ul {
   p,
   a{
     font-size: 12px !important;
+    font-weight: normal;
   }
   h2,
   h3{
@@ -1486,7 +1487,7 @@ ul {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 20px;
+  left: 35px;
   color: #2196f3;
 }
 
