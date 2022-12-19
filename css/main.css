@@ -109,6 +109,17 @@ ul {
 }
 
 /* End Components */
+@media(max-width: 992px){
+  p,
+  a{
+    font-size: 12px !important;
+  }
+  h2,
+  h3{
+    font-size: 14px !important;
+    font-weight: normal !important;
+  }
+}
 /* Start Header */
 .header {
   background-color: white;
@@ -2134,15 +2145,4 @@ ul {
 }
 
 /* End Footer */
-@media(max-width: 992px){
-  p,
-  a{
-    font-size: 12px !important;
-  }
-  h2,
-  h3{
-    font-size: 14px !important;
-    font-weight: normal !important;
-  }
-}
 /*# sourceMappingURL=main.css.map */
