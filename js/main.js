@@ -1,4 +1,4 @@
-// Calculation of remaining time 
+// Calculation of remaining Time
 let count = new Date("Dec 31, 2023 23:59:59").getTime();
 
 let counter = setInterval(() =>{  
