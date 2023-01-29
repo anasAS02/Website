@@ -110,15 +110,21 @@ ul {
 
 /* End Components */
 @media(max-width: 992px){
-  p,
-  a{
-    font-size: 12px !important;
+  .mob a,
+  .mob p{
+    font-size: 9px !important;
     font-weight: normal;
   }
-  h2,
-  h3{
+  .mob h2,
+  .mob h3{
+    font-size: 10px !important;
+  }
+  .mob-2 p,
+  .mob-2 a{
+    font-size: 10px!important;
+  }
+  .mob-3 a{
     font-size: 14px !important;
-    font-weight: normal !important;
   }
 }
 /* Start Header */
@@ -758,6 +764,11 @@ ul {
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
+@media(max-width: 992px){
+.testimonials .w-container {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+}
 
 .testimonials .w-container .box {
   background-color: white;
@@ -821,6 +832,12 @@ ul {
   z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+.team .w-container .box::after {
+  margin: -650px auto;
+}
 }
 
 .team .w-container .box:hover::after {
@@ -986,6 +1003,12 @@ ul {
   background-color: #2196f3;
   left: 0;
   bottom: 0;
+}
+
+@media(max-width: 990px){
+.services .w-container .box .s-info::after {
+  width: 16%;
+}
 }
 
 /* End Services */
@@ -2135,7 +2158,7 @@ ul {
 
 @media (max-width: 991px) {
   .footer .w-container .copy-right {
-    top: 97%;
+    top: 98%;
   }
 }
 
