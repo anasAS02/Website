@@ -117,7 +117,7 @@ ul {
   }
   .mob h2,
   .mob h3{
-    font-size: 10px !important;
+    font-size: 10px;
   }
   .mob-2 p,
   .mob-2 a{
@@ -125,6 +125,9 @@ ul {
   }
   .mob-3 a{
     font-size: 14px !important;
+  }
+  .main-title{
+    font-size: 24px !important;
   }
 }
 /* Start Header */
@@ -1507,10 +1510,10 @@ ul {
   font-family: 'font Awesome 5 Free';
   font-weight: bold;
   font-size: 18px;
-  top: 50%;
+  top: 44%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 35px;
+  left: 24px;
   color: #2196f3;
 }
 
@@ -1592,6 +1595,12 @@ ul {
   color: white;
   background-color: #2196f3;
   z-index: 3;
+}
+
+@media(max-width: 990px){
+  .plans .w-container .most .head .most-p{
+    left: 79%;
+  }
 }
 
 .plans .w-container .most::after {
@@ -2046,7 +2055,7 @@ ul {
 
 @media (min-width: 1024px) {
   .footer .w-container {
-    height: calc(78vh - 60px);
+    height: calc(79vh - 60px);
   }
 }
 
@@ -2142,7 +2151,7 @@ ul {
 }
 
 .footer .w-container .i-gallery img {
-  width: 74px;
+  width: 43px;
 }
 
 .footer .w-container .copy-right {
