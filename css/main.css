@@ -2030,33 +2030,7 @@ ul {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
   position: relative;
-}
-
-.footer .w-container::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #777;
-  bottom: 65px;
-}
-
-@media (max-width: 991px) {
-  .footer .w-container {
-    height: calc(60vh + 700px);
-  }
-}
-
-@media (min-width: 992px) {
-  .footer .w-container {
-    height: calc(100vh - 100px);
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer .w-container {
-    height: calc(79vh - 60px);
-  }
+  height: 100vh;
 }
 
 .footer .w-container .f-box .social {
@@ -2165,7 +2139,7 @@ ul {
   font-size: 18px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 851px) {
   .footer .w-container .copy-right {
     top: 98%;
   }
@@ -2173,7 +2147,7 @@ ul {
 
 @media (min-width: 992px) {
   .footer .w-container .copy-right {
-    top: 96%;
+    top: 95%;
   }
 }
 
